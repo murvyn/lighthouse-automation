@@ -1,0 +1,60 @@
+{
+  "baseUrl": "https://example.com",
+  "routes": [
+    {
+      "name": "home-page",
+      "path": "/",
+      "authenticated": false,
+      "displayName": "Home Page",
+      "thresholds": {
+        "performance": 50,
+        "accessibility": 80,
+        "best-practices": 80,
+        "seo": 80
+      }
+    },
+    {
+      "name": "about",
+      "path": "/about",
+      "authenticated": false,
+      "displayName": "About Page"
+    },
+    {
+      "name": "pricing",
+      "path": "/pricing",
+      "authenticated": false,
+      "displayName": "Pricing Page"
+    },
+    {
+      "name": "dashboard",
+      "path": "/dashboard",
+      "authenticated": true,
+      "displayName": "Dashboard (Authenticated)",
+      "waitFor": "[data-testid='dashboard-loaded']",
+      "thresholds": {
+        "performance": 40,
+        "accessibility": 85,
+        "best-practices": 80,
+        "seo": 70
+      }
+    },
+    {
+      "name": "user-profile",
+      "path": "/user/profile",
+      "authenticated": true,
+      "displayName": "User Profile (Authenticated)"
+    }
+  ],
+  "globalThresholds": {
+    "performance": 25,
+    "accessibility": 50,
+    "best-practices": 50,
+    "seo": 50
+  },
+  "reportDir": "./lighthouse-reports",
+  "authFile": "./auth.json",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "timeout": 180000,
+  "verbose": false
+}

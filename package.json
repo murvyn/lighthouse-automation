@@ -1,0 +1,53 @@
+{
+  "name": "@company/lighthouse-automation",
+  "version": "1.0.0",
+  "description": "Automated Lighthouse performance testing for Playwright projects. Automatically generate and run Lighthouse audits for multiple URLs/routes with minimal configuration.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "playwright test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lighthouse",
+    "performance",
+    "testing",
+    "playwright",
+    "automation",
+    "qa",
+    "web-performance",
+    "audit"
+  ],
+  "author": "Your Company",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0"
+  },
+  "dependencies": {
+    "get-port": "^5.1.1",
+    "playwright-lighthouse": "^4.0.0",
+    "lighthouse": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-company/lighthouse-automation"
+  },
+  "bugs": {
+    "url": "https://github.com/your-company/lighthouse-automation/issues"
+  },
+  "homepage": "https://github.com/your-company/lighthouse-automation"
+}

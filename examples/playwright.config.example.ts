@@ -1,10 +1,10 @@
 /**
- * Example Playwright configuration for using @company/lighthouse-automation
+ * Example Playwright configuration for using lighthouse-automation
  *
  * To use this package in your Playwright project:
  *
  * 1. Install the package:
- *    npm install --save-dev @company/lighthouse-automation
+ *    npm install --save-dev lighthouse-automation
  *
  * 2. Copy routes.config.example.json to your project root as routes.config.json
  *
@@ -14,7 +14,7 @@
  *    npx playwright test
  */
 
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 // Create all tests from configuration
 createLighthouseSuite('./routes.config.json');

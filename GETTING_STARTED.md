@@ -1,10 +1,10 @@
-# Getting Started with @company/lighthouse-automation
+# Getting Started with lighthouse-automation
 
 Complete guide to get up and running in 5 minutes.
 
 ## What is This Package?
 
-`@company/lighthouse-automation` automatically runs Google Lighthouse performance audits on your website routes. Define your URLs in a simple config file and get professional HTML reports.
+`lighthouse-automation` automatically runs Google Lighthouse performance audits on your website routes. Define your URLs in a simple config file and get professional HTML reports.
 
 **Key features:**
 - ✅ Audit multiple routes automatically
@@ -38,7 +38,7 @@ npm init -y
 ### Step 2: Install Package
 
 ```bash
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 ```
 
 Then install browsers:
@@ -83,7 +83,7 @@ Create `playwright.config.ts` in your project root:
 
 ```typescript
 import { defineConfig } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json');
 
@@ -101,7 +101,7 @@ Create `tests/lighthouse.spec.ts`:
 
 ```typescript
 import { test } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json', test);
 ```
@@ -352,7 +352,7 @@ Need more details?
 
 ```bash
 # Install packages
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 
 # Install browsers
 npx playwright install --with-deps

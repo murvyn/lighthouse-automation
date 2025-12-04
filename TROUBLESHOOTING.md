@@ -6,12 +6,12 @@ Comprehensive guide for diagnosing and fixing issues.
 
 1. **Check Node version**: `node --version` (need 16+)
 2. **Check npm version**: `npm --version`
-3. **Verify package installed**: `npm list @company/lighthouse-automation`
+3. **Verify package installed**: `npm list lighthouse-automation`
 4. **Verify browsers installed**: `npx playwright install --with-deps`
 
 ## Setup Issues
 
-### "Cannot find module @company/lighthouse-automation"
+### "Cannot find module lighthouse-automation"
 
 **Problem:** npm can't find the package
 
@@ -19,15 +19,15 @@ Comprehensive guide for diagnosing and fixing issues.
 
 1. **Verify installation:**
 ```bash
-npm list @company/lighthouse-automation
+npm list lighthouse-automation
 npm list @playwright/test
 npm list playwright
 ```
 
 2. **Reinstall if needed:**
 ```bash
-npm uninstall @company/lighthouse-automation @playwright/test playwright
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm uninstall lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 ```
 
 3. **Clear npm cache:**

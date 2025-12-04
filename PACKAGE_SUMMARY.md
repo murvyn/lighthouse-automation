@@ -1,4 +1,4 @@
-# @company/lighthouse-automation - Package Summary
+# lighthouse-automation - Package Summary
 
 ## ✅ Package Build Complete
 
@@ -87,11 +87,11 @@ src/
 
 ### User Workflow
 ```
-1. npm install @company/lighthouse-automation
+1. npm install lighthouse-automation
 2. Create routes.config.json with URLs
 3. Add auth.json (if needed)
 4. Update playwright.config.ts:
-   - import { createLighthouseSuite } from '@company/lighthouse-automation'
+   - import { createLighthouseSuite } from 'lighthouse-automation'
    - createLighthouseSuite('./routes.config.json')
 5. npm test
 6. Results saved to lighthouse-reports/
@@ -190,7 +190,7 @@ Total Imports:       ~25 npm dependencies
 ### To Use in Your Project
 
 ```bash
-npm install --save-dev @company/lighthouse-automation
+npm install --save-dev lighthouse-automation
 ```
 
 Then copy the example files and follow the README.
@@ -236,6 +236,6 @@ const result = await runner.run();
 
 ---
 
-**Package**: @company/lighthouse-automation v1.0.0
+**Package**: lighthouse-automation v1.0.0
 **Status**: ✅ Ready for Publication
 **Date**: December 3, 2025

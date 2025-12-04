@@ -1,4 +1,4 @@
-# @company/lighthouse-automation
+# ighthouse-automation
 
 Automated Lighthouse performance testing for Playwright projects. Define your URLs/routes in a JSON config file and automatically get Lighthouse audits for each route with minimal setup. Supports both authenticated and public pages with customizable thresholds, parallel testing, and professional HTML reports.
 
@@ -46,13 +46,13 @@ Automated Lighthouse performance testing for Playwright projects. Define your UR
 ### Install Package
 
 ```bash
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 ```
 
 Or with yarn:
 
 ```bash
-yarn add --dev @company/lighthouse-automation @playwright/test playwright
+yarn add --dev lighthouse-automation @playwright/test playwright
 ```
 
 ## Quick Start
@@ -90,7 +90,7 @@ Create `routes.config.json` in your project root:
 Create or update `playwright.config.ts`:
 
 ```typescript
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json');
 
@@ -150,7 +150,7 @@ my-lighthouse-project/
 
 ```bash
 # Install the package and required peer dependencies
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 
 # Install Playwright browsers (required for testing)
 npx playwright install --with-deps
@@ -167,7 +167,7 @@ Create `playwright.config.ts` in your project root:
 
 ```typescript
 import { defineConfig } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 // Create Lighthouse tests from config
 createLighthouseSuite('./routes.config.json');
@@ -235,7 +235,7 @@ Create `tests/lighthouse.spec.ts`:
 
 ```typescript
 import { test } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 // Pass the test instance to avoid version conflicts
 // This line generates one test per route from routes.config.json
@@ -737,7 +737,7 @@ Machine-readable results for integration and analysis:
 Main function to create all Lighthouse tests from configuration.
 
 ```typescript
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json');
 export default {};
@@ -748,7 +748,7 @@ export default {};
 Utility class for loading and managing cookies:
 
 ```typescript
-import { CookieManager } from '@company/lighthouse-automation';
+import { CookieManager } from 'lighthouse-automation';
 
 const manager = CookieManager.load('./auth.json');
 const cookies = manager.asPlaywrightCookies();
@@ -760,7 +760,7 @@ const domainCookies = manager.getByDomain('example.com');
 Utility class for formatted console output:
 
 ```typescript
-import { Logger } from '@company/lighthouse-automation';
+import { Logger } from 'lighthouse-automation';
 
 const logger = new Logger(/* verbose */ false);
 logger.printRouteResult(result);
@@ -775,7 +775,7 @@ logger.error('Error message');
 Core utility for running audits programmatically:
 
 ```typescript
-import { LighthouseRunner } from '@company/lighthouse-automation';
+import { LighthouseRunner } from 'lighthouse-automation';
 
 const runner = new LighthouseRunner({
   baseUrl: 'https://example.com',

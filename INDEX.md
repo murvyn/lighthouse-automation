@@ -1,4 +1,4 @@
-# @company/lighthouse-automation - Complete Index
+# lighthouse-automation - Complete Index
 
 Welcome! This is your automated Lighthouse testing npm package. Here's a guide to all the files and where to start.
 
@@ -82,7 +82,7 @@ dist/                           # Compiled JavaScript
 
 #### 👤 QA Team Member
 **Goal**: Run Lighthouse tests for your website
-1. Install: `npm install --save-dev @company/lighthouse-automation`
+1. Install: `npm install --save-dev lighthouse-automation`
 2. Read: [README.md](./README.md) - Quick Start section
 3. Copy: [examples/routes.config.example.json](./examples/routes.config.example.json)
 4. Follow: Setup instructions in README
@@ -165,8 +165,8 @@ npm publish --access=public
 
 ### Use the Package in Your Project
 ```bash
-npm install --save-dev @company/lighthouse-automation
-cp node_modules/@company/lighthouse-automation/examples/routes.config.example.json ./routes.config.json
+npm install --save-dev lighthouse-automation
+cp node_modules/lighthouse-automation/examples/routes.config.example.json ./routes.config.json
 # Edit routes.config.json with your URLs
 npx playwright test
 ```
@@ -237,7 +237,7 @@ Choose your path:
 
 ---
 
-**Package**: @company/lighthouse-automation v1.0.0
+**Package**: lighthouse-automation v1.0.0
 **Status**: ✅ Production Ready
 **Last Updated**: December 3, 2025
 

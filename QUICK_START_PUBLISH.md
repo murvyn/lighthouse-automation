@@ -1,4 +1,4 @@
-# Quick Start: Publishing @company/lighthouse-automation
+# Quick Start: Publishing lighthouse-automation
 
 ## 📦 Ready to Publish!
 
@@ -35,10 +35,10 @@ After publishing, verify it's live:
 
 ```bash
 # Check npm registry
-npm info @company/lighthouse-automation
+npm info lighthouse-automation
 
 # Or visit in browser
-https://www.npmjs.com/package/@company/lighthouse-automation
+https://www.npmjs.com/package/lighthouse-automation
 ```
 
 ---
@@ -48,7 +48,7 @@ https://www.npmjs.com/package/@company/lighthouse-automation
 After publishing, your team can install with:
 
 ```bash
-npm install --save-dev @company/lighthouse-automation
+npm install --save-dev lighthouse-automation
 ```
 
 Then follow the README.md to get started!
@@ -92,4 +92,4 @@ npm publish
 
 **Status**: ✅ Ready to publish
 **Location**: /home/marvin/Documents/lighthouse-automation/
-**Package**: @company/lighthouse-automation@1.0.0
+**Package**: lighthouse-automation@1.0.0

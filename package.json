@@ -1,5 +1,5 @@
 {
-  "name": "@company/lighthouse-automation",
+  "name": "lighthouse-automation",
   "version": "2.0.0",
   "description": "Automated Lighthouse performance testing for Playwright projects. Automatically generate and run Lighthouse audits for multiple URLs/routes with minimal configuration.",
   "main": "dist/index.js",
@@ -44,10 +44,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-company/lighthouse-automation"
+    "url": "https://github.com/murvyn/lighthouse-automation"
   },
   "bugs": {
-    "url": "https://github.com/your-company/lighthouse-automation/issues"
+    "url": "https://github.com/murvyn/lighthouse-automation/issues"
   },
-  "homepage": "https://github.com/your-company/lighthouse-automation"
+  "homepage": "https://github.com/murvyn/lighthouse-automation"
 }

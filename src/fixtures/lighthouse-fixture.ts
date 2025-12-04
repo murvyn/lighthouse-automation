@@ -137,7 +137,7 @@ export function createLighthouseSuite(configPath: string, testInstance?: any) {
  * Playwright fixture-style API
  * Usage in playwright.config.ts:
  * ```
- * import { createLighthouseSuite } from '@company/lighthouse-automation';
+ * import { createLighthouseSuite } from 'lighthouse-automation';
  * createLighthouseSuite('./routes.config.json');
  * export default {};
  * ```

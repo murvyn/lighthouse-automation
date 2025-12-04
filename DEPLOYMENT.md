@@ -56,8 +56,8 @@ npm publish --registry=https://your-private-registry.com
 ### 5. Verify Publication
 
 ```bash
-npm info @company/lighthouse-automation
-# or visit https://www.npmjs.com/package/@company/lighthouse-automation
+npm info lighthouse-automation
+# or visit https://www.npmjs.com/package/lighthouse-automation
 ```
 
 ## Private npm Registry (Optional)
@@ -104,7 +104,7 @@ npm publish
 Users can then install with:
 
 ```bash
-npm install --save-dev @company/lighthouse-automation
+npm install --save-dev lighthouse-automation
 ```
 
 ## Updating Package

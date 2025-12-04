@@ -1,5 +1,5 @@
 /**
- * @company/lighthouse-automation
+ * lighthouse-automation
  * Automated Lighthouse performance testing for Playwright projects
  */
 

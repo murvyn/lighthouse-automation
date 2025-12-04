@@ -19,7 +19,7 @@ my-project/
 
 ```bash
 # Install package
-npm install --save-dev @company/lighthouse-automation @playwright/test playwright
+npm install --save-dev lighthouse-automation @playwright/test playwright
 
 # Install browsers
 npx playwright install --with-deps
@@ -86,7 +86,7 @@ npm run test:report
 
 ```typescript
 import { defineConfig } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json');
 
@@ -102,7 +102,7 @@ export default defineConfig({
 
 ```typescript
 import { test } from '@playwright/test';
-import { createLighthouseSuite } from '@company/lighthouse-automation';
+import { createLighthouseSuite } from 'lighthouse-automation';
 
 createLighthouseSuite('./routes.config.json', test);
 ```

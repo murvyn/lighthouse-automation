@@ -1,6 +1,6 @@
 {
   "name": "@company/lighthouse-automation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automated Lighthouse performance testing for Playwright projects. Automatically generate and run Lighthouse audits for multiple URLs/routes with minimal configuration.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

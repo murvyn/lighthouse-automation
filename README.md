@@ -1,4 +1,4 @@
-# ighthouse-automation
+# lighthouse-automation
 
 Automated Lighthouse performance testing for Playwright projects. Define your URLs/routes in a JSON config file and automatically get Lighthouse audits for each route with minimal setup. Supports both authenticated and public pages with customizable thresholds, parallel testing, and professional HTML reports.
 
